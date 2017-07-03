@@ -5,13 +5,20 @@ import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
 import Home from './components/HelloFromVux'
+import GroupCell from './components/GroupCell'
 
 Vue.use(VueRouter)
 
-const routes = [{
-  path: '/',
-  component: Home
-}]
+const routes = [
+  {
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/GroupCell',
+    component: GroupCell
+  }
+]
 
 const router = new VueRouter({
   routes
